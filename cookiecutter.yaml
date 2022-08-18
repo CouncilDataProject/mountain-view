@@ -1,0 +1,13 @@
+default_context:
+    municipality: "Mountain View"
+    iana_timezone: "America/Los_Angeles"
+    governing_body_type: "city council"
+    municipality_slug: "mountain-view"
+    python_municipality_slug: "mountain_view"
+    infrastructure_slug: "cdp-mountain-view-7c8a47df"
+    maintainer_or_org_full_name: "evamaxfield"
+    hosting_github_username_or_org: "CouncilDataProject"
+    hosting_github_repo_name: "mountain-view"
+    hosting_github_url: "https://github.com/CouncilDataProject/mountain-view"
+    hosting_web_app_address: "https://councildataproject.github.io/mountain-view"
+    firestore_region: "us-central"
