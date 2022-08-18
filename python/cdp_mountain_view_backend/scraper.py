@@ -5,6 +5,7 @@ from datetime import datetime
 from typing import List
 
 from cdp_backend.pipeline.ingestion_models import EventIngestionModel
+from cdp_scrapers.legistar_utils import LegistarScraper
 
 ###############################################################################
 
@@ -14,27 +15,9 @@ def get_events(
     to_dt: datetime,
     **kwargs,
 ) -> List[EventIngestionModel]:
-    """
-    Get all events for the provided timespan.
+    scraper = LegistarScraper(
+        client="mountainview",
+        timezone="America/Los_Angeles",
+    )
 
-    Parameters
-    ----------
-    from_dt: datetime
-        Datetime to start event gather from.
-    to_dt: datetime
-        Datetime to end event gather at.
-
-    Returns
-    -------
-    events: List[EventIngestionModel]
-        All events gathered that occured in the provided time range.
-
-    Notes
-    -----
-    As the implimenter of the get_events function, you can choose to ignore the from_dt
-    and to_dt parameters. However, they are useful for manually kicking off pipelines
-    from GitHub Actions UI.
-    """
-
-    # Your implementation here
-    return []
+    return scraper.get_events(begin=from_dt, end=to_dt)
