@@ -29,6 +29,7 @@ def get_events(
                 "in Superior Court to certain City administrative decisions"
             ),
             "CONSENT CALENDAR - None.",
+            "During this declared state of emergency",
         ],
     )
 
