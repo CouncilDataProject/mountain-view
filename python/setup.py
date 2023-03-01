@@ -6,7 +6,7 @@
 from setuptools import find_packages, setup
 
 requirements = [
-    "cdp-backend[pipeline]==3.2.8",
+    "cdp-backend[pipeline]==4.0.6",
     "cdp-scrapers[mountain_view]",
 ]
 
@@ -31,13 +31,14 @@ extra_requirements = {
 }
 
 setup(
-    author="evamaxfield",
+    author="Council Data Project Contributors",
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
         "Natural Language :: English",
         "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
     ],
     description="Package containing the gather functions for Example.",
     install_requires=requirements,

@@ -5,7 +5,7 @@ default_context:
     municipality_slug: "mountain-view"
     python_municipality_slug: "mountain_view"
     infrastructure_slug: "cdp-mountain-view-7c8a47df"
-    maintainer_or_org_full_name: "evamaxfield"
+    maintainer_or_org_full_name: "Council Data Project Contributors"
     hosting_github_username_or_org: "CouncilDataProject"
     hosting_github_repo_name: "mountain-view"
     hosting_github_url: "https://github.com/CouncilDataProject/mountain-view"
@@ -13,3 +13,5 @@ default_context:
     firestore_region: "us-central"
     event_gather_timedelta_lookback_days: 2
     event_gather_cron: "23 14 * * *"
+    enable_clipping: "true"
+    speech_to_text_model_version: "large"

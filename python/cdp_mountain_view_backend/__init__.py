@@ -5,7 +5,7 @@ Top-level package for Mountain View
 CDP Instance backend.
 """
 
-__author__ = "evamaxfield"
+__author__ = "Council Data Project Contributors"
 __version__ = "1.0.0"
 
 
